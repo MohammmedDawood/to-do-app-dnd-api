@@ -20,24 +20,24 @@ app.use(express.static(path.join(__dirname, "/src/build")));
 app.use(express.json());
 
 let todos = [
-  {
-    id: nanoid(),
-    title: "todo1",
-    description: "create react project",
-    status: "In Progress",
-  },
-  {
-    id: nanoid(),
-    title: "todo2",
-    description: "create react project",
-    status: "In Progress",
-  },
-  {
-    id: nanoid(),
-    title: "todo3",
-    description: "create react project",
-    status: "In Progress",
-  },
+  // {
+  //   id: nanoid(),
+  //   title: "todo1",
+  //   description: "create react project",
+  //   status: "In Progress",
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: "todo2",
+  //   description: "create react project",
+  //   status: "In Progress",
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: "todo3",
+  //   description: "create react project",
+  //   status: "In Progress",
+  // },
 ];
 
 app.get("/todos", (req, res) => res.send(todos));
