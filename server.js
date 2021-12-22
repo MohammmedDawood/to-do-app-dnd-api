@@ -85,13 +85,13 @@ app.delete("/todos/:id", (req, res) => {
   res.send(todos);
 });
 
-app.get("/", (req, res) => {
-  res.send("hello world");
-});
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname + "/src/build/index.html"));
+// app.get("/", (req, res) => {
+//   res.send("hello world");
 // });
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/src/build/index.html"));
+});
 // set port, listen for requests
 const PORT = process.env.PORT || 7000;
 app.listen(PORT, () => {
